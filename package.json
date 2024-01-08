@@ -1,0 +1,20 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test tests/",
+    "test:example2": "npx playwright test ./tests/example2.spec.ts",
+    "test:e2e:all": "npx playwright test tests --project=all-browsers-and-tests",
+    "test:e2e:ci": "CI=1 npx playwright test --project= ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.22.3",
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.9"
+  }
+}
